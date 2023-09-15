@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Previewer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container w-full h-screen bg-gray-900 flex justify-center
+    items-center flex-col space-y-4">
+      <h2 class="text-blue-400 text-3xl">File Preview</h2>
+      <div class="w-80 h-60 py-8 px-3 background rounded-lg">
+      <form id="uploadForm" enctype="multipart/form-data">
+        <div class="upload-box">
+          <div class="file-input text-center mx-auto mb-4">
+            <input type="file" name="file" id="file" hidden/>
+            <i class="fas fa-upload icon"></i>
+            <p class="text-xl text-white">Tap on the icon to add file</p>
+          </div>
+      </div>
+      </form>
+    </div>
+      <div class="w-80 h-[50%] py-8 px-3 background rounded-lg mt-9 flex
+      flex-col preview hidden">
+        <div class="mb-20 mx-auto">
+          <img class="w-60 h-32 rounded-lg hidden" src="Github.jpg" alt="" id="prevImg" />
+          <h2 class="text-7xl text-blue-200 Ficon text-center mt-10 hidden"><i
+          class="fas fa-file"></i></h2>
+        </div>
+        <div class="space-y-3">
+          <h3 id="file-name"class="text-xl text-blue-100 text-center">File name: Imgksibdhuud.jpg</h3>
+          <div class="flex justify-between">
+          <h3 id="file-type" class="text-xl text-blue-100">File type:  Image/jpeg</h3>
+          <h3 id="file-size" class="text-lg text-blue-200">File Size: 0.3kb</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

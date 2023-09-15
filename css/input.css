@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .background {
+    background: rgba(223, 223, 255, 0.3);
+  }
+  
+  .icon {
+    @apply text-8xl text-blue-400 hover:border-4 hover:border-dotted border-white
+    focus:border-dotted p-4 focus:border-4 mb-3;
+  }
+  
+  .h2 {
+    
+  }
+}
